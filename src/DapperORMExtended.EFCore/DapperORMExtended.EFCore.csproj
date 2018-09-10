@@ -7,7 +7,7 @@
     <Description>Extending Dapper to make it easier to integrate with Entity Framework Core.</Description>
     <Product>DapperORMExtended</Product>
     <Company>João Simões</Company>
-    <Copyright>Copyright © 2018 joão Simões</Copyright>
+    <Copyright>Copyright © 2018 João Simões</Copyright>
     <Authors>João Simões</Authors>
   </PropertyGroup>
 
@@ -39,7 +39,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="Dapper.StrongName" Version="1.50.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.0" AllowedVersions="[2.0.0,2.*]" />
   </ItemGroup>
 

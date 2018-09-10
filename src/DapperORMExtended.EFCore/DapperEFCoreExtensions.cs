@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Data;
 using System.Data.Common;
+using System.Threading;
+using Dapper;
 using Microsoft.EntityFrameworkCore.Storage;
 
 // ReSharper disable once CheckNamespace
@@ -10,14 +13,18 @@ namespace Microsoft.EntityFrameworkCore
     /// </summary>
     public static partial class DapperEFCoreExtensions
     {
-        private static void ExtractDapperParams(this DbContext context, int? commandTimeout, 
-            out DbConnection connection, out DbTransaction transaction, out int timeout)
+        private static void ExtractDapperParams(this DbContext context, 
+            string commandText, object parameters, int? commandTimeout, CommandType? commandType, CommandFlags flags, CancellationToken ct,
+            out DbConnection connection, out CommandDefinition command)
         {
             if (context == null) throw new ArgumentNullException(nameof(context));
 
             connection = context.Database.GetDbConnection();
-            transaction = context.Database.CurrentTransaction?.GetDbTransaction();
-            timeout = commandTimeout ?? connection.ConnectionTimeout;
+            command = new CommandDefinition(
+                commandText, parameters,
+                context.Database.CurrentTransaction?.GetDbTransaction(),
+                commandTimeout ?? connection.ConnectionTimeout,
+                commandType, flags, ct);
         }
     }
 }
