@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F9EC490B-6B67-4EB2-9BC7-1E6E07899E2F}"
+	ProjectSection(SolutionItems) = preProject
+		tools\assemblymetadata.ps1 = tools\assemblymetadata.ps1
+		tools\DapperORMExtended.PublicKey = tools\DapperORMExtended.PublicKey
+		tools\DapperORMExtended.snk = tools\DapperORMExtended.snk
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
