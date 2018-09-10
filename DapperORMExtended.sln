@@ -10,9 +10,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F9EC490B
 		tools\DapperORMExtended.snk = tools\DapperORMExtended.snk
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{06B4AFD9-E566-467B-9608-2A3467F8194A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperORMExtended.EFCore", "src\DapperORMExtended.EFCore\DapperORMExtended.EFCore.csproj", "{4FAE2D87-7706-4331-8392-7421DA7469F8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FAE2D87-7706-4331-8392-7421DA7469F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAE2D87-7706-4331-8392-7421DA7469F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAE2D87-7706-4331-8392-7421DA7469F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAE2D87-7706-4331-8392-7421DA7469F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4FAE2D87-7706-4331-8392-7421DA7469F8} = {06B4AFD9-E566-467B-9608-2A3467F8194A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9B6920B8-ADF0-4748-834C-B3F81D3E5A9A}
