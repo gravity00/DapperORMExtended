@@ -22,6 +22,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="commandType">Optional command type.</param>
         /// <param name="flags">Optional command flags.</param>
         /// <returns>A task to be awaited for the collection of items T.</returns>
+        /// <exception cref="ArgumentNullException"></exception>
         public static Task<IEnumerable<T>> RawQueryAsync<T>(this DbContext context, CancellationToken ct, string commandText,
             object parameters = null, int? commandTimeout = null, CommandType? commandType = null, CommandFlags flags = CommandFlags.Buffered)
         {
@@ -44,6 +45,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="commandType">Optional command type.</param>
         /// <param name="flags">Optional command flags.</param>
         /// <returns>A task to be awaited for the collection of items T.</returns>
+        /// <exception cref="ArgumentNullException"></exception>
         public static Task<IEnumerable<object>> RawQueryAsync(this DbContext context, CancellationToken ct, Type type, string commandText,
             object parameters = null, int? commandTimeout = null, CommandType? commandType = null, CommandFlags flags = CommandFlags.Buffered)
         {
@@ -65,6 +67,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="commandType">Optional command type.</param>
         /// <param name="flags">Optional command flags.</param>
         /// <returns>The collection of items T.</returns>
+        /// <exception cref="ArgumentNullException"></exception>
         public static IEnumerable<T> RawQuery<T>(this DbContext context, string commandText,
             object parameters = null, int? commandTimeout = null, CommandType? commandType = null, CommandFlags flags = CommandFlags.Buffered)
         {
@@ -86,6 +89,7 @@ namespace Microsoft.EntityFrameworkCore
         /// <param name="commandType">Optional command type.</param>
         /// <param name="flags">Optional command flags.</param>
         /// <returns>The collection of items T.</returns>
+        /// <exception cref="ArgumentNullException"></exception>
         public static IEnumerable<object> RawQuery(this DbContext context, Type type, string commandText,
             object parameters = null, int? commandTimeout = null, CommandType? commandType = null, CommandFlags flags = CommandFlags.Buffered)
         {
