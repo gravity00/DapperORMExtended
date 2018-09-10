@@ -10,7 +10,8 @@ namespace Microsoft.EntityFrameworkCore
     public static partial class DapperEFCoreExtensions
     {
         /// <summary>
-        /// Executes a command in the database, using the context connection and current transaction, if any.
+        /// Executes a command in the database, using the context connection and current transaction, if any,
+        /// and returns a data reader.
         /// </summary>
         /// <param name="context">The database context.</param>
         /// <param name="ct">The cancellation token.</param>
@@ -34,7 +35,8 @@ namespace Microsoft.EntityFrameworkCore
         }
 
         /// <summary>
-        /// Executes a command in the database, using the context connection and current transaction, if any.
+        /// Executes a command in the database, using the context connection and current transaction, if any,
+        /// and returns a data reader.
         /// </summary>
         /// <param name="context">The database context.</param>
         /// <param name="commandText">The command text.</param>
