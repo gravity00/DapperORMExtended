@@ -10,7 +10,7 @@ namespace Microsoft.EntityFrameworkCore
     public static partial class DapperEFCoreExtensions
     {
         /// <summary>
-        /// Executes a query in the database.
+        /// Executes a query in the database, using the context connection and current transaction, if any.
         /// </summary>
         /// <typeparam name="T">The type to return.</typeparam>
         /// <param name="context">The database context.</param>
@@ -31,7 +31,7 @@ namespace Microsoft.EntityFrameworkCore
         }
 
         /// <summary>
-        /// Executes a query in the database.
+        /// Executes a query in the database, using the context connection and current transaction, if any.
         /// </summary>
         /// <typeparam name="T">The type to return.</typeparam>
         /// <param name="context">The database context.</param>
