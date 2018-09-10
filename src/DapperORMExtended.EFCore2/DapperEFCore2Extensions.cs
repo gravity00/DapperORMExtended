@@ -11,7 +11,7 @@ namespace Microsoft.EntityFrameworkCore
     /// <summary>
     /// Extensions for <see cref="DbContext"/> instances to simplify Dapper integrations.
     /// </summary>
-    public static partial class DapperEFCoreExtensions
+    public static partial class DapperEFCore2Extensions
     {
         private static void ExtractDapperParams(this DbContext context, 
             string commandText, object parameters, int? commandTimeout, CommandType? commandType, CommandFlags flags, CancellationToken ct,

@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <RootNamespace>DapperORMExtended</RootNamespace>
-    <AssemblyTitle>DapperORMExtended.EFCore</AssemblyTitle>
-    <AssemblyName>DapperORMExtended.EFCore</AssemblyName>
-    <Description>Extending Dapper to make it easier to integrate with Entity Framework Core.</Description>
+    <AssemblyTitle>DapperORMExtended.EFCore2</AssemblyTitle>
+    <AssemblyName>DapperORMExtended.EFCore2</AssemblyName>
+    <Description>Extending Dapper to make it easier to integrate with Entity Framework Core 2.</Description>
     <Product>DapperORMExtended</Product>
     <Company>João Simões</Company>
     <Copyright>Copyright © 2018 João Simões</Copyright>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>DapperORMExtended.EFCore</PackageId>
+    <PackageId>DapperORMExtended.EFCore2</PackageId>
     <PackageTags>dapper;efcore;database</PackageTags>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/30837484</PackageIconUrl>
     <PackageProjectUrl>https://github.com/gravity00/DapperORMExtended</PackageProjectUrl>
@@ -40,7 +40,7 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper.StrongName" Version="1.50.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.0" AllowedVersions="[2.0.0,2.*]" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="[2,3)" />
   </ItemGroup>
 
 </Project>
