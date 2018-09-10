@@ -1,18 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>DapperORMExtended</RootNamespace>
-    <AssemblyTitle>DapperORMExtended.EFCore2</AssemblyTitle>
-    <AssemblyName>DapperORMExtended.EFCore2</AssemblyName>
+    <RootNamespace>DapperORMExtensions</RootNamespace>
+    <AssemblyTitle>DapperORMExtensions.EFCore2</AssemblyTitle>
+    <AssemblyName>DapperORMExtensions.EFCore2</AssemblyName>
     <Description>Extending Dapper to make it easier to integrate with Entity Framework Core 2.</Description>
-    <Product>DapperORMExtended</Product>
+    <Product>DapperORMExtensions</Product>
     <Company>João Simões</Company>
     <Copyright>Copyright © 2018 João Simões</Copyright>
     <Authors>João Simões</Authors>
   </PropertyGroup>
 
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>../../tools/DapperORMExtended.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>../../tools/DapperORMExtensions.snk</AssemblyOriginatorKeyFile>
     <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
     <SignAssembly>true</SignAssembly>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>DapperORMExtended.EFCore2</PackageId>
+    <PackageId>DapperORMExtensions.EFCore2</PackageId>
     <PackageTags>dapper;efcore;database</PackageTags>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/30837484</PackageIconUrl>
     <PackageProjectUrl>https://github.com/gravity00/DapperORMExtended</PackageProjectUrl>

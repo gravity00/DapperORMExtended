@@ -6,13 +6,13 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F9EC490B-6B67-4EB2-9BC7-1E6E07899E2F}"
 	ProjectSection(SolutionItems) = preProject
 		tools\assemblymetadata.ps1 = tools\assemblymetadata.ps1
-		tools\DapperORMExtended.PublicKey = tools\DapperORMExtended.PublicKey
-		tools\DapperORMExtended.snk = tools\DapperORMExtended.snk
+		tools\DapperORMExtensions.PublicKey = tools\DapperORMExtensions.PublicKey
+		tools\DapperORMExtensions.snk = tools\DapperORMExtensions.snk
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{06B4AFD9-E566-467B-9608-2A3467F8194A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperORMExtended.EFCore2", "src\DapperORMExtended.EFCore2\DapperORMExtended.EFCore2.csproj", "{4FAE2D87-7706-4331-8392-7421DA7469F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperORMExtensions.EFCore2", "src\DapperORMExtensions.EFCore2\DapperORMExtensions.EFCore2.csproj", "{4FAE2D87-7706-4331-8392-7421DA7469F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
