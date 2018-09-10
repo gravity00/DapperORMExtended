@@ -18,6 +18,7 @@ namespace Microsoft.EntityFrameworkCore
             out DbConnection connection, out CommandDefinition command)
         {
             if (context == null) throw new ArgumentNullException(nameof(context));
+            if (commandText == null) throw new ArgumentNullException(nameof(commandText));
 
             connection = context.Database.GetDbConnection();
             command = new CommandDefinition(
